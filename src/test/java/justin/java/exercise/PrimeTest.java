@@ -1,4 +1,4 @@
-package justin.java.practice;
+package justin.java.exercise;
 
 import static org.junit.Assert.assertTrue;
 
@@ -8,6 +8,8 @@ import java.util.List;
 import org.hamcrest.collection.IsIterableContainingInOrder;
 import org.junit.Assert;
 import org.junit.Test;
+
+import justin.java.exercise.Primes;
 
 public class PrimeTest {
 	@Test

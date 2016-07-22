@@ -1,4 +1,4 @@
-package justin.java.practice;
+package justin.java.exercise;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +9,8 @@ public class Primes {
 	}
 	
 	public static List<Integer> primes(int n) {
+		if (n <= 0)
+			return new ArrayList<Integer>();
 		List<Integer> primeList = new ArrayList<Integer>();
 		for (int i = 1; i < n; i++) {
 			if (isPrime(i))
