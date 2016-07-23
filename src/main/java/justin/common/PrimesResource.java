@@ -7,7 +7,7 @@ import javax.ws.rs.core.Response;
 
 import justin.java.exercise.Primes;
 
-@Path("/primes")
+@Path("/prime")
 public class PrimesResource {
 
 	@GET
