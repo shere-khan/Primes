@@ -1,6 +1,7 @@
 package justin.java.exercise;
 
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,12 +10,15 @@ import org.hamcrest.collection.IsIterableContainingInOrder;
 import org.junit.Assert;
 import org.junit.Test;
 
-import justin.java.exercise.Primes;
-
 public class PrimeTest {
 	@Test
 	public void isPrimeTest() {
 		assertTrue(Primes.isPrime(7));
+	}
+	
+	@Test
+	public void isNotPrimeTest() {
+		assertFalse(Primes.isPrime(4));
 	}
 
 	@Test
