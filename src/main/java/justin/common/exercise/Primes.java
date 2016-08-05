@@ -1,4 +1,4 @@
-package justin.java.exercise;
+package justin.common.exercise;
 
 import java.util.ArrayList;
 import java.util.List;

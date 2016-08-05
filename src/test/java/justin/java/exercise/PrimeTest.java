@@ -10,6 +10,8 @@ import org.hamcrest.collection.IsIterableContainingInOrder;
 import org.junit.Assert;
 import org.junit.Test;
 
+import justin.common.exercise.Primes;
+
 public class PrimeTest {
 	@Test
 	public void isPrimeTest() {

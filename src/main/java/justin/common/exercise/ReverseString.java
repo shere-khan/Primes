@@ -1,4 +1,4 @@
-package justin.java.exercise;
+package justin.common.exercise;
 
 public class ReverseString {
 
