@@ -14,6 +14,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jersey2.version>2.23.1</jersey2.version>
 		<jaxrs.version>2.0.1</jaxrs.version>
+		<javax.version>2.5</javax.version>
 	</properties>
 
 	<dependencies>
@@ -38,7 +39,7 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
-			<version>3.0-alpha-1</version>
+			<version>${javax.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.ws.rs</groupId>
