@@ -5,7 +5,7 @@
 	<groupId>justin.java</groupId>
 	<artifactId>practice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>practice</name>
 	<url>http://maven.apache.org</url>
@@ -74,6 +74,16 @@
 						<descriptor>src/main/webapp/WEB-INF</descriptor>
 						<contextPath>/primes</contextPath>
 					</webAppConfig>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<!-- <packagingExcludes>WEB-INF/web.xml</packagingExcludes> -->
+					<webXml>src/main/webapp/WEB-INF/web.xml</webXml>
+					<outputDirectory>build/lib/dist</outputDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
