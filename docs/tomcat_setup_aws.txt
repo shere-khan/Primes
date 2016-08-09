@@ -1,0 +1,18 @@
+# Add to CATALINA_HOME/conf/tomcat-users.xml
+ <role rolename="manager-script"/>
+  <role rolename="manager-gui"/>
+  <role rolename="manager-jmx"/>
+  <role rolename="manager-status"/>
+  <role rolename="manager"/>
+  <role rolename="admin"/>
+  <user username="tomcat" password="tomcat" roles="manager-gui,manager,admin"/>
+
+# Add to CATALINA_HOME/conf/context.xml
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Context privileged="true" antiResourceLocking="false" 
+         docBase="${catalina.home}/webapps/manager">
+    <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+</Context>
